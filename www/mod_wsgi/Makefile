@@ -2,7 +2,7 @@
 
 COMMENT =		module that supports the Python WSGI interface
 
-DISTNAME =		mod_wsgi-2.3
+DISTNAME =		mod_wsgi-2.6
 CATEGORIES =		www
 
 HOMEPAGE =		http://code.google.com/p/modwsgi/
