@@ -44,8 +44,8 @@ LIB_DEPENDS +=		${MODPY_LIB_DEPENDS}
 
 NO_REGRESS =		Yes
 
-do-build:
-	(cd ${WRKBUILD}; ${APXS} -o mod_wsgi.so -c *.c)
+#do-build:
+#	(cd ${WRKBUILD}; ${APXS} -o mod_wsgi.so -c *.c)
 
 post-build:
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
