@@ -32,7 +32,10 @@ MODULES =		${APACHE_MODULE} \
 			lang/python
 
 MODAPACHE_NAME =	wsgi
+
+.if ${FLAVOR:M:Bapache2}
 MODAPACHE_FILE = ${MODAPACHE_LOCATION}/.libs/${MODAPACHE_MODULE}
+.endif
 
 CONFIGURE_STYLE =	simple
 CONFIGURE_ARGS +=	--with-python=${MODPY_BIN}
