@@ -22,6 +22,10 @@ FLAVOR ?=
 
 APXS = /usr/sbin/apxs
 
+.if ${FLAVOR:M:Mapache2}
+MODAPACHE_LOCATION = ${WRKBUILD}/.libs
+.endif
+
 .if ${FLAVOR:L:Mapache2}
 APACHE_MODULE = www/apache-httpd
 .else
@@ -32,12 +36,6 @@ MODULES =		${APACHE_MODULE} \
 			lang/python
 
 MODAPACHE_NAME =	wsgi
-
-.if ${FLAVOR:M:Mapache2}
-MODAPACHE_LOCATION +=/.libs
-.endif
-
-echo ${MODAPACHE_LOCATION}
 
 CONFIGURE_STYLE =	simple
 CONFIGURE_ARGS +=	--with-python=${MODPY_BIN}
