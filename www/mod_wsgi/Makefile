@@ -33,7 +33,7 @@ MODULES =		${APACHE_MODULE} \
 
 MODAPACHE_NAME =	wsgi
 
-.if ${FLAVOR:M:Bapache2}
+.if ${FLAVOR:M:Mapache2}
 MODAPACHE_FILE = ${MODAPACHE_LOCATION}/.libs/${MODAPACHE_MODULE}
 .endif
 
