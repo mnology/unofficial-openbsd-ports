@@ -6,7 +6,6 @@ DISTNAME =		mod_wsgi-2.6
 CATEGORIES =		www
 
 HOMEPAGE =		http://code.google.com/p/modwsgi/
-MASTER_SITES =		http://modwsgi.googlecode.com/files/
 
 MAINTAINER =		Erik Johansen <lemnayde@mnology.com>
 
@@ -15,6 +14,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
+
+MASTER_SITES =		http://modwsgi.googlecode.com/files/
 
 FLAVORS = apache2
 FLAVOR ?=
@@ -32,7 +33,7 @@ MODULES =		${APACHE_MODULE} \
 
 MODAPACHE_NAME =	wsgi
 
-CONFIGURE_STYLE =	gnu
+CONFIGURE_STYLE =	simple
 CONFIGURE_ARGS +=	--with-python=${MODPY_BIN}
 
 .if ${FLAVOR:L:Mapache2}
