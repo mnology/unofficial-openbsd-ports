@@ -17,6 +17,9 @@ PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
 FLAVORS = apache2
+FLAVOR ?=
+
+APXS = /usr/sbin/apxs
 
 .if ${FLAVOR:L:Mapache2}
 APACHE_MODULE = www/apache-httpd
@@ -42,7 +45,7 @@ LIB_DEPENDS +=		${MODPY_LIB_DEPENDS}
 NO_REGRESS =		Yes
 
 do-build:
-	(cd ${WRKBUILD}; apxs -o mod_wsgi.so -c *.c)
+	(cd ${WRKBUILD}; ${APXS} -o mod_wsgi.so -c *.c)
 
 post-build:
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
