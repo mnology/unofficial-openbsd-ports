@@ -1,7 +1,3 @@
 @comment $OpenBSD$
-.if ${FLAVOR:L:Mapache2}
-lib/apache2/${MODAPACHE_MODULE}
-.else
 lib/${MODAPACHE_MODULE}
-.endif
 sbin/${MODAPACHE_ENABLE}
