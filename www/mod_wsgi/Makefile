@@ -22,7 +22,7 @@ FLAVOR ?=
 
 APXS = /usr/sbin/apxs
 
-.if ${FLAVOR:M:Mapache2}
+.if ${FLAVOR:L:Mapache2}
 MODAPACHE_LOCATION = ${WRKBUILD}/.libs
 .endif
 
