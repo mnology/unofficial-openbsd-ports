@@ -14,7 +14,7 @@ PERMIT_PACKAGE_FTP =		Yes
 PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
-RUN_DEPENDS= :devel/p5-ExtUtils-Depends->=0.302:mystuff/devel/p5-ExtUtils-Depends
+RUN_DEPENDS= :devel/p5-ExtUtils-Depends->=0.302:devel/p5-ExtUtils-Depends
 BUILD_DEPENDS= ${RUN_DEPENDS}
 
 .include <bsd.port.mk>
