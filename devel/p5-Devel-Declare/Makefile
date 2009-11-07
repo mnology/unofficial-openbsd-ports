@@ -18,5 +18,7 @@ BUILD_DEPENDS= ${RUN_DEPENDS}
 RUN_DEPENDS= ::devel/p5-B-Hooks-EndOfScope \
 	::devel/p5-B-Hooks-OP-Check \
 	::devel/p5-Sub-Name
+
+REGRESS_DEPENDS = :p5-Test-More->=0.88:devel/p5-Test-More
 	
 .include <bsd.port.mk>

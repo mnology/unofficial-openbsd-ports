@@ -1,9 +1,9 @@
 # $OpenBSD:
 
-COMMENT =	Adding keywords to perl, in perl
+COMMENT =	Basic utilities for writing tests.
 
 MODULES =	cpan
-DISTNAME = Devel-Declare-0.005011
+DISTNAME = Test-Simple-0.88
 CATEGORIES =	devel
 
 MAINTAINER = Erik Johansen <lemnayde@mnology.com>
@@ -14,9 +14,4 @@ PERMIT_PACKAGE_FTP =		Yes
 PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
-BUILD_DEPENDS= ${RUN_DEPENDS}
-RUN_DEPENDS= ::devel/p5-B-Hooks-EndOfScope \
-	::devel/p5-B-Hooks-OP-Check \
-	::devel/p5-Sub-Name
-	
 .include <bsd.port.mk>
