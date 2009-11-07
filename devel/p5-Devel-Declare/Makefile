@@ -16,7 +16,7 @@ PERMIT_DISTFILES_FTP =		Yes
 
 BUILD_DEPENDS= ${RUN_DEPENDS}
 RUN_DEPENDS= ::devel/p5-B-Hooks-EndOfScope \
-	::devel/p5-B-Hooks-OP-Check
-	::devel/p5-Sub-name
+	::devel/p5-B-Hooks-OP-Check \
+	::devel/p5-Sub-Name
 	
 .include <bsd.port.mk>
