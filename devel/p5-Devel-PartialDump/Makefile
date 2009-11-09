@@ -1,6 +1,6 @@
 # $OpenBSD:
 
-COMMENT = Partial dumping of data structures, optimized for argument printing.
+COMMENT = Partial dumping of data structures / optimized arg printing.
 
 MODULES =	cpan
 DISTNAME = Devel-PartialDump-0.12
