@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+${P5SITE}/Context/
+${P5SITE}/Context/Preserve.pm
+@man man/man3p/Context::Preserve.3p
