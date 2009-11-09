@@ -20,6 +20,6 @@ BUILD_DEPENDS = ::devel/p5-MooseX-Types \
 	::devel/p5-MooseX-Meta-TypeConstraint-ForceCoercion
 	::devel/p5-Context-Preserve \
 	::devel/p5-MooseX-LazyRequire \
-	::devel/p5-Declare-Declare
+	::devel/p5-Devel-Declare
 
 .include <bsd.port.mk>
