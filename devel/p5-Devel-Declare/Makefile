@@ -19,6 +19,4 @@ RUN_DEPENDS= ::devel/p5-B-Hooks-EndOfScope \
 	::devel/p5-B-Hooks-OP-Check \
 	::devel/p5-Sub-Name
 
-REGRESS_DEPENDS = :p5-Test-Simple->=0.88:devel/p5-Test-Simple
-	
 .include <bsd.port.mk>

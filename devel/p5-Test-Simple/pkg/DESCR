@@ -1,5 +1,0 @@
-The purpose of this module is to provide a wide range of testing
-utilities. Various ways to say "ok" with better diagnostics, facilities
-to skip tests, test future features and compare complicated data
-structures. While you can do almost anything with a simple ok()
-function, it doesn't provide good diagnostic output.
