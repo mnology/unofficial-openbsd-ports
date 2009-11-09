@@ -1,6 +1,6 @@
 # $OpenBSD:
 
-COMMENT = Method declarations with type constraints and no source filter
+COMMENT = Method declarations with type constraints & no source filter
 
 MODULES =	cpan
 DISTNAME = MooseX-Method-Signatures-0.29
