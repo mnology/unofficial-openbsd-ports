@@ -15,7 +15,7 @@ PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
 RUN_DEPENDS = ${BUILD_DEPENDS}
-BUILD_DEPENDS =  ::devel/p5-Moose \
+BUILD_DEPENDS =  :p5-Moose->=0.84:devel/p5-Moose \
 	::devel/p5-namespace-autoclean \
 
 REGRESS_DEPENDS = ::devel/p5-Test-use-ok
