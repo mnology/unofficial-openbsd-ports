@@ -4,7 +4,7 @@ COMMENT =  Extract delimited text sequences from strings.
 
 MODULES =	cpan
 DISTNAME =  Text-Balanced-2.02
-CATEGORIES =	devel
+CATEGORIES =	textproc
 
 MAINTAINER = Erik Johansen <lemnayde@mnology.com>
 
