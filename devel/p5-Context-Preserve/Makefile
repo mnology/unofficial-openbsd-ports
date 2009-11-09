@@ -1,8 +1,6 @@
 # $OpenBSD:
 
-COMMENT =  run code after a subroutine call, preserving the context \
-the subroutine would have seen if it were the last statement in the \
-caller
+COMMENT =  run code after a subroutine call, preserving the context
 
 MODULES =	cpan
 DISTNAME =  Context-Preserve-0.01
