@@ -15,7 +15,7 @@ PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
 BUILD_DEPENDS= ${RUN_DEPENDS}
-RUN_DEPENDS= ::p5-MooseX-Types \
-	p5-Moose
+RUN_DEPENDS= ::devel/p5-MooseX-Types \
+	::devel/p5-Moose
 
 .include <bsd.port.mk>
