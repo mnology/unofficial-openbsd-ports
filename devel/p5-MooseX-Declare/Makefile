@@ -17,7 +17,7 @@ PERMIT_DISTFILES_FTP =		Yes
 RUN_DEPENDS = ${BUILD_DEPENDS}
 BUILD_DEPENDS = ::devel/p5-namespace-autoclean \
 	::devel/p5-MooseX-Method-Signatures \
-	::devel/p5-MooseX-Role-Paramterized
+	::devel/p5-MooseX-Role-Parameterized
 
 REGRESS_DEPENDS = ::devel/p5-Test-Exception \
 	::devel/p5-Test-NoWarnings 
