@@ -1,0 +1,12 @@
+The various extract_... subroutines may be used to extract a delimited
+substring, possibly after skipping a specified prefix string. By
+default, that prefix is optional whitespace (/\s*/), but you can change
+it to whatever you wish (see below).
+
+The substring to be extracted must appear at the current pos location of
+the string's variable (or at index zero, if no pos position is defined).
+In other words, the extract_... subroutines don't extract the first
+occurrence of a substring anywhere in a string (like an unanchored regex
+would). Rather, they extract an occurrence of the substring appearing
+immediately at the current matching position in the string (like a
+\G-anchored regex would).
