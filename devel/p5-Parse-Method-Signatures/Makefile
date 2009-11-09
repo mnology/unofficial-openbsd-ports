@@ -16,7 +16,7 @@ PERMIT_DISTFILES_FTP =		Yes
 
 RUN_DEPENDS = ${BUILD_DEPENDS}
 BUILD_DEPENDS = ::devel/p5-MooseX-Types \
-	::devel/p5-PPI \
+	::textproc/p5-PPI \
   ::devel/p5-MooseX-Types-Structured \
 	::devel/p5-aliased \
 	::devel/p5-MooseX-Traits \
