@@ -17,7 +17,7 @@ PERMIT_DISTFILES_FTP =		Yes
 RUN_DEPENDS = ${BUILD_DEPENDS}
 BUILD_DEPENDS = ::devel/p5-MooseX-Types \
 	::devel/p5-Parse-Method-Signatures \
-	::devel/p5-MooseX-Meta-TypeConstraint-ForceCoercion
+	::devel/p5-MooseX-Meta-TypeConstraint-ForceCoercion \
 	::devel/p5-Context-Preserve \
 	::devel/p5-MooseX-LazyRequire \
 	::devel/p5-Devel-Declare
