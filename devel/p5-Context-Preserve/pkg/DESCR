@@ -1,0 +1,16 @@
+Sometimes you need to call a function, get the results, act on the
+results, then return the result of the function. This is painful because
+of contexts; the original function can behave different if it's called
+in void, scalar, or list context. You can ignore the various cases and
+just pick one, but that's fragile. To do things right, you need to see
+which case you're being called in, and then call the function in that
+context. This results in 3 code paths, which is a pain to type in (and
+maintain).
+
+This module automates the process. You provide a coderef that is the
+"original function", and another coderef to run after the original runs.
+You can modify the return value (aliased to @_) here, and do whatever
+else you need to do. wantarray is correct inside both coderefs; in
+"after", though, the return value is ignored and the value wantarray
+returns is related to the context that the original function was called
+in.
