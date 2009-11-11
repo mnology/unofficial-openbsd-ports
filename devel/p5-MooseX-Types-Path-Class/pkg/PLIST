@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+${P5SITE}/MooseX/Types/Path/
+${P5SITE}/MooseX/Types/Path/Class.pm
+@man man/man3p/MooseX::Types::Path::Class.3p
