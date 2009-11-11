@@ -16,5 +16,8 @@ PERMIT_DISTFILES_FTP =		Yes
 
 BUILD_DEPENDS= ${RUN_DEPENDS}
 RUN_DEPENDS= ::devel/p5-namespace-clean \
+	p5-MooseX-Types-Path-Class \
+	p5-URI \
+	p5-URI-FromHash
 
 .include <bsd.port.mk>
