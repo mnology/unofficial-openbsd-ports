@@ -18,4 +18,11 @@ BUILD_DEPENDS= ${RUN_DEPENDS}
 RUN_DEPENDS= ::devel/p5-Params-Validate \
 	::www/p5-URI
 
+do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/${P5ARCH}/URI
+	${INSTALL_DATA} ${WRKSRC}/HTML/FromHash.pm \
+    	${PREFIX}/${P5ARCH}/HTML/
+	${INSTALL_MAN_DIR} ${PREFIX}/man/man3p/
+	${INSTALL_MAN} ${WRKSRC}/URI::FromHash.3p ${PREFIX}/man/man3p/
+
 .include <bsd.port.mk>
