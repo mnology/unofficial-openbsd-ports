@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+%%SHARED%%
+${P5ARCH}/Devel/LexAlias.pm
+${P5ARCH}/auto/Devel/LexAlias/
+${P5ARCH}/auto/Devel/LexAlias/LexAlias.bs
+@man man/man3p/Devel::LexAlias.3p
