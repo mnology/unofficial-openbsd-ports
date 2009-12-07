@@ -19,7 +19,9 @@ BUILD_DEPENDS = ::devel/p5-MooseX-Object-Pluggable \
 	::devel/p5-File-HomeDir \
 	::devel/p5-namespace-clean \
 	::devel/p5-MooseX-Getopt \
-	::devel/p5-MooseX-AttributeHelpers
+	::devel/p5-MooseX-AttributeHelpers \
+	::devel/p5-Data-Dump-Streamer \
+	::devel/p5-Lexical-Persistence
 
 REGRESS_DEPENDS = ::devel/p5-Test-Exception \
 	::devel/p5-Test-NoWarnings 
